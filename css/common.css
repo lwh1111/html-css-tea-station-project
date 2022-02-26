@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100px;
+}
+
+body {
+  font-family: "Catamaran", sans-serif;
+	color: var(--mainDark);
+}
+
+/* 清除浮动 */
+.clearfix::before, 
+.clearfix::after {
+	content: '';
+	clear: both;
+	display: table;
+}
+
+/* icon */
+@font-face {
+  font-family: 'iconfont';  /* Project id 3201045 */
+  src: url('//at.alicdn.com/t/font_3201045_vwmh6ldpmc.woff2?t=1645860270898') format('woff2'),
+       url('//at.alicdn.com/t/font_3201045_vwmh6ldpmc.woff?t=1645860270898') format('woff'),
+       url('//at.alicdn.com/t/font_3201045_vwmh6ldpmc.ttf?t=1645860270898') format('truetype');
+}
+
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:.16rem;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: .002rem;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* variables */
+:root {
+  --primaryColor: #698f3f;
+	--secondaryColor: #fca311;
+  --mainWhite: #fff;
+  --mainGrey: #e5e5e5;
+	--mainDark: #3a3e3b;
+  --mainTransition: all 0.3s linear;
+	--letterSpacing: .08rem;
+	--slantedText: "Grand Hotel", cursive;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-white {
+  color: var(--mainWhite);
+}
+
+.text-primary {
+  color: var(--primaryColor);
+}
